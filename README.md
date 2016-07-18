@@ -22,11 +22,20 @@ Please raise any issues, questions or comments as a [new issue in this repositor
 | **duration** | Integer | Duration of the event in minutes. |
 | **price** | Decimal | Price of the event in pounds sterling (0 if free). |
 | **channel** | Object | 	Object containing information relating to channel responsible for event, as follows: |
-| **channel.name** | String | Channel name. |
+| **channel.id** | Integer | Unique ID of the channel. |
+| **channel.name** | String | Channel name (limited to 50 characters). |
 | **channel.url** | String | 	Channel URL. |
+| **channel.tagline** | String | Channel tagline (limited to 70 characters). |
 | **channel.description** | String | Channel description (limited to 2000 characters). |
 | **channel.location** | String | Channel location (descriptive - not to be relied upon for accurate location-based data) |
-| **channel.image_url** | String | URL of the channel image (1:1 aspect ratio). |
+| **channel.profile_image_url** | String | URL of the channel profile image (1:1 aspect ratio). |
+| **channel.header_image_url** | String | URL of the channel header image (4:1 aspect ratio). |
+| **channel.website_url** | String | Channel owner's website URL. |
+| **channel.facebook_url** | String | Channel owner's Facebook URL. |
+| **channel.twitter_url** | String | Channel owner's Twitter URL. |
+| **channel.instagram_url** | String | Channel owner's Instagram URL. |
+| **channel.youtube_url** | String | Channel owner's YouTube URL. |
+| **channel.intro_video_url** | String | URL of channel introduction video. |
 | **created_at** | ISO8601 String | 	ISO8601 timestamp of the date/time the event was created. This is expressed in UTC. |
 
 ### Example
