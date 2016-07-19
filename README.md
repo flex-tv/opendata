@@ -77,6 +77,10 @@ Please raise any issues, questions or comments as a [new issue in this repositor
 * Zumba
 * Other
 
+### Note
+
+Section [4.4 Related entities](https://www.openactive.io/realtime-paged-data-exchange/#related-entities) of the Openactive Realtime Paged Data Exchange specification specifies that updates to nested entities (i.e. channel) be reflected in the item modified timestamp. Currently this implementation does not meet this requirement. Sessions, however, are the time-critical data and channel data is expected to see irregular updates. Consumers subscribed to the [mailing list](http://data.joinflex.tv/) will be notified upon the update of this implementation regarding this.
+
 ## Changelog
 
 | Date | Changes |
